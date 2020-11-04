@@ -1,0 +1,18 @@
+CREATE TABLE users(
+u_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+Username VARCHAR(50) NOT NULL,
+Name VARCHAR(50) NOT NULL,
+Address VARCHAR(50) NOT NULL,
+Pincode INT NOT NULL,
+PhoneNo BIGINT(22) NOT NULL,
+Password VARCHAR(50) NOT NULL,
+Gender VARCHAR(10) NOT NULL,
+DateOfBirth VARCHAR(50) NOT NULL,
+Email VARCHAR(50) NOT NULL,
+Balance INT NOT NULL
+);
+
+ALTER TABLE employees ADD Balance INT;
+INSERT INTO users(Username, Name, Address, Pincode, PhoneNo, Password, Gender, DateOfBirth, Email, Balance)
+VALUES('Monks', 'Aditya', 'BTM Banglore', 560068, 9654789410, 'Monks', 'Male', '12 March 1996', 'abc@gmail.com', 20000),
+('Ahmd', 'Aman', 'MG BAnglore', 560001, 9968574855, 'Ahmd', 'Male', '14 April 1985', 'bcde@gmail.com', 50000);
